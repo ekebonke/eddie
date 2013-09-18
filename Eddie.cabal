@@ -6,14 +6,22 @@ author:         ekebonke
 
 library
   hs-source-dirs:  src
-  build-depends:   base >= 4
+  build-depends:   
+                   base >= 4,
+                   containers
   ghc-options:     -Wall
-  other-modules:   Eddie.Search
+  other-modules:   
+                   Eddie.Examples,
+                   Eddie.Graph,
+                   Eddie.Search
 
 executable Eddie
   hs-source-dirs:  src
   main-is:         Main.hs
   build-depends:   base >= 4
   ghc-options:     -Wall
-  other-modules:   Eddie.Search
+  other-modules:   
+                   Eddie.Examples,
+                   Eddie.Graph,
+                   Eddie.Search
 
