@@ -16,7 +16,8 @@ library
   other-modules:   
                    Eddie.Examples,
                    Eddie.Graph,
-                   Eddie.Search
+                   Eddie.Search,
+                   Eddie.Kalman
 
 executable Eddie
   hs-source-dirs:  src
@@ -26,5 +27,6 @@ executable Eddie
   other-modules:   
                    Eddie.Examples,
                    Eddie.Graph,
-                   Eddie.Search
+                   Eddie.Search,
+                   Eddie.Kalman
 

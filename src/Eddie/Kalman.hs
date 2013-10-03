@@ -11,12 +11,12 @@ import Numeric.LinearAlgebra
 
 data State = State { covariance :: Matrix Double, state :: Matrix Double } deriving (Eq, Show)
 
-kalmanFilter :: Matrix Double      -- | state transition matrix 
-                -> Matrix Double   -- | state projection matrix
-                -> Matrix Double   -- | measurement noise
-                -> State           -- | the old state
-                -> Vector Double   -- | measurement of the observable state
-                -> State           -- | the new state
+kalmanFilter :: Matrix Double      -- ^ state transition matrix 
+                -> Matrix Double   -- ^ state projection matrix
+                -> Matrix Double   -- ^ measurement noise
+                -> State           -- ^ the old state
+                -> Vector Double   -- ^ measurement of the observable state
+                -> State           -- ^ the new state
 kalmanFilter f h r s measurement = 
   let x = (state s) 
       p = (covariance s)
