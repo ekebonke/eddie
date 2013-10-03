@@ -10,7 +10,8 @@ library
                    base >= 4,
                    containers,
                    vector,
-                   bytestring
+                   bytestring,
+                   hmatrix
   ghc-options:     -Wall
   other-modules:   
                    Eddie.Examples,

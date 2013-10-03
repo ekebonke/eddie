@@ -70,3 +70,4 @@ runSimple world motion measurements =
             initialBelief = uniform worldSize
             motions       = replicate (length measurements) motion  -- same motion forward
         in run world f initialBelief motions measurements
+
